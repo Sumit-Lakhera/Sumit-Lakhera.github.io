@@ -89,30 +89,10 @@ jQuery(document).ready(function($) {
       }
     });
     if (ferror) return false;
-    else var str = $(this).serialize();
-    var action = $(this).attr('action');
-    if( ! action ) {
-      action = 'contactform/contactform.php';
-    }
-    $.ajax({
-      type: "POST",
-      url: action,
-      data: str,
-      success: function(msg) {
-        // alert(msg);
-        if (msg == 'OK') {
-          $("#sendmessage").addClass("show");
-          $("#errormessage").removeClass("show");
-          $('.contactForm').find("input, textarea").val("");
-        } else {
-          $("#sendmessage").removeClass("show");
-          $("#errormessage").addClass("show");
-          $('#errormessage').html(msg);
-        }
-
-      }
-    });
-    return false;
+    let name=document.getElementById('name').value;
+    let email=document.getElementById('email').value;
+    let subject= document.getElementById('subject').value;
+    let message=document.getElementById('message').value;
+    window.open(`mailto:lakherasumit@gmail.com?subject=${subject}&body=${message}`);
   });
-
 });
