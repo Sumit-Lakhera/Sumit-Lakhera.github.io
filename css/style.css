@@ -35,6 +35,10 @@ h2 {
   color: #292929;
   font-weight: 600;
 }
+h3{
+  font-size: 1rem;
+  font-weight: bold;
+}
 
 h4 {
   color: #292929;
@@ -288,6 +292,17 @@ nav ul li a {
 /*  Aout-us
 /*-----------------------------------------------------------------------------------*/
 
+.border-right{
+  border-right: 1px dotted #b8a07e;
+}
+.pad-15{
+  padding-inline-start: 15px !important ;
+  margin-top: 15px;
+
+}
+.pad-15 > li{
+  padding: 2px;
+}
 #about {
   width: 100%;
   height: auto;
