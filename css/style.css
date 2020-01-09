@@ -408,7 +408,15 @@ nav ul li a {
 /*-----------------------------------------------------------------------------------*/
 /*  Portfolio
 /*-----------------------------------------------------------------------------------*/
+.filter{
+  padding: 2px;
+}
 
+#portfolio-flters{
+  display: flex;
+  justify-content: space-around;
+  padding: 2px;
+}
 #portfolio {
   position: relative;
   padding-bottom: 50px;
@@ -419,16 +427,16 @@ nav ul li a {
 }
 
 #portfolio .portfolio-list .nav {
-  display: inline-block;
+  /* display: inline-block; */
   margin: 0;
 }
 
 #portfolio .portfolio-list .nav li {
-  margin: 0 40px 0 0;
+  /* margin: 0 40px 0 0; */
   float: left;
   font-size: 14px;
   color: #999999;
-  line-height: 16px;
+  /* line-height: 16px; */
   cursor: pointer;
   font-family: 'Poppins', helvetica;
   font-weight: 500;
