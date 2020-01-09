@@ -225,6 +225,9 @@
     float: none;
     display: inline-block;
   }
+  .border-right{
+    border-right: hidden !important;
+  }
 }
 
 /** Width between 480px to 0
@@ -294,6 +297,9 @@
     margin-left: 0;
     float: none;
     display: inline-block;
+  }
+  .border-right{
+    border-right: hidden !important;
   }
 }
 
@@ -369,5 +375,8 @@
   .entry-comments-body span {
     display: inline-block;
     margin-right: 0;
+  }
+  .border-right{
+    border-right: hidden !important;
   }
 }
